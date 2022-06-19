@@ -11,6 +11,11 @@ please install virtualenv
 >>> python -m virtualenv env
 >>> .\env\Scripts\activate
 
+>>> git clone https://github.com/ParasAgr/Group_Messenger.git
+>>> cd Group_Messenger  
+>>> pip install -r requirment.txt
+>>> python manage.py runserver
+
 ```
 
 ## Usage
