@@ -14,6 +14,21 @@ please install virtualenv
 >>> git clone https://github.com/ParasAgr/Group_Messenger.git
 >>> cd Group_Messenger  
 >>> pip install -r requirment.txt
+
+>>> Create a Database in Postgres
+>>> Add Database to the settings.py file 
+>>> DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': <db_name>,
+        'USER': <user_name>,
+        'PASSWORD': <password>,
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+>>> python manage.py makemigrations
+>>> python manage.py migrate
 >>> python manage.py runserver
 
 ```
